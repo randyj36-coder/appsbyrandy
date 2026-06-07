@@ -9,9 +9,7 @@
   --leaf: #49735b;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   margin: 0;
@@ -21,9 +19,7 @@ body {
   background: var(--paper);
 }
 
-a {
-  color: var(--accent);
-}
+a { color: var(--accent); }
 
 .shell {
   width: min(920px, calc(100% - 32px));
@@ -71,9 +67,7 @@ nav {
   text-decoration: none;
 }
 
-main {
-  padding: 56px 0 72px;
-}
+main { padding: 56px 0 72px; }
 
 .hero {
   padding: 34px;
@@ -96,10 +90,9 @@ main {
 }
 
 .app-icon {
-  content: url("/assets/orchid-guardian-icon.svg");
-  width: 104px;
-  height: 104px;
-  border-radius: 24px;
+  width: 82px;
+  height: 82px;
+  border-radius: 20px;
   box-shadow: 0 10px 28px rgba(36, 49, 44, 0.16);
   flex: 0 0 auto;
 }
@@ -110,21 +103,16 @@ main {
   gap: 12px;
 }
 
-.app-card-title h2 {
-  margin-top: 0;
-}
+.app-card-title h2 { margin-top: 0; }
 
 .app-card-icon {
-  content: url("/assets/orchid-guardian-icon.svg");
   width: 54px;
   height: 54px;
   border-radius: 14px;
   flex: 0 0 auto;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   line-height: 1.18;
   margin: 0 0 14px;
 }
@@ -139,17 +127,11 @@ h2 {
   font-size: 1.5rem;
 }
 
-p {
-  margin: 0 0 16px;
-}
+p { margin: 0 0 16px; }
 
-ul {
-  padding-left: 1.25rem;
-}
+ul { padding-left: 1.25rem; }
 
-.muted {
-  color: var(--muted);
-}
+.muted { color: var(--muted); }
 
 .cards {
   display: grid;
@@ -190,13 +172,9 @@ footer {
     flex-direction: column;
   }
 
-  nav {
-    padding: 18px 0;
-  }
+  nav { padding: 18px 0; }
 
-  .hero {
-    padding: 24px;
-  }
+  .hero { padding: 24px; }
 
   .app-icon {
     width: 82px;
