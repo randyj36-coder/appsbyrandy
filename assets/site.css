@@ -89,6 +89,37 @@ main {
   margin: 0 0 24px;
 }
 
+.app-hero {
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.app-icon {
+  width: 82px;
+  height: 82px;
+  border-radius: 20px;
+  box-shadow: 0 10px 28px rgba(36, 49, 44, 0.16);
+  flex: 0 0 auto;
+}
+
+.app-card-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.app-card-title h2 {
+  margin-top: 0;
+}
+
+.app-card-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 11px;
+  flex: 0 0 auto;
+}
+
 h1,
 h2,
 h3 {
@@ -151,13 +182,23 @@ footer {
 }
 
 @media (max-width: 640px) {
-  nav {
+  nav,
+  .app-hero {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  nav {
     padding: 18px 0;
   }
 
   .hero {
     padding: 24px;
+  }
+
+  .app-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 17px;
   }
 }
