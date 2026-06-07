@@ -44,9 +44,19 @@ nav {
 }
 
 .brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-weight: 800;
   color: var(--ink);
   text-decoration: none;
+}
+
+.brand-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  flex: 0 0 auto;
 }
 
 .nav-links {
@@ -70,6 +80,13 @@ main {
   background: var(--panel);
   border: 1px solid var(--line);
   border-radius: 12px;
+}
+
+.hero-logo {
+  display: block;
+  width: min(300px, 100%);
+  height: auto;
+  margin: 0 0 24px;
 }
 
 h1,
