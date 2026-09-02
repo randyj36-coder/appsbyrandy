@@ -4,9 +4,47 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Apps by Randy</title>
-    <meta name="description" content="Apps, privacy policies, terms, and support information for Apps by Randy.">
+    <meta name="description" content="Thoughtful, focused apps for everyday life from Apps by Randy.">
     <link rel="icon" href="/assets/appsbyrandy-mark.svg" type="image/svg+xml">
     <link rel="stylesheet" href="/assets/site.css">
+    <style>
+      .status {
+        display: inline-block;
+        margin-bottom: 12px;
+        padding: 5px 9px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        color: var(--muted);
+        font-size: 0.8rem;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+      }
+
+      .card.leaffolio { border-top: 3px solid #6F8F72; }
+      .card.curious-nature { border-top: 3px solid #6D96BD; }
+      .card.keepspan { border-top: 3px solid #66746e; }
+
+      .card p:last-child { margin-bottom: 0; }
+
+      .app-card-title {
+        align-items: center;
+      }
+
+      .app-card-title h2 {
+        margin-bottom: 0;
+      }
+
+      .app-card-copy {
+        margin-top: 14px;
+      }
+
+      .secondary-link {
+        display: inline-block;
+        margin-top: 10px;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -16,30 +54,58 @@
           <span>Apps by Randy</span>
         </a>
         <div class="nav-links">
-          <a href="/apps/orchid-guardian/">Orchid Guardian</a>
-          <a href="/privacy/orchid-guardian/">Privacy</a>
-          <a href="/terms/orchid-guardian/">Terms</a>
-          <a href="/support/orchid-guardian/">Support</a>
+          <a href="#apps">Apps</a>
+          <a href="mailto:info@appsbyrandy.com">Contact</a>
         </div>
       </nav>
     </header>
+
     <main class="shell">
       <section class="hero">
         <img class="hero-logo" src="/assets/appsbyrandy-logo.svg" alt="Apps by Randy">
-        <h1>Small, useful apps for everyday plant care.</h1>
-        <p class="muted">This site hosts app information, support pages, terms, and privacy policies for apps created by Randy Johannsen.</p>
+        <h1>Thoughtful apps for everyday life.</h1>
+        <p class="muted">Apps by Randy creates small, focused apps that help you pay attention to the things you care about—your plants, your surroundings, your memories, and whatever comes next.</p>
       </section>
-      <section class="cards" aria-label="Apps">
-        <article class="card">
+
+      <section id="apps" class="cards" aria-label="Apps">
+        <article class="card leaffolio">
+          <span class="status">Coming first</span>
           <div class="app-card-title">
-            <img class="app-card-icon" src="/assets/orchid-guardian-icon.png" alt="" aria-hidden="true">
-            <h2>Orchid Guardian</h2>
+            <img class="app-card-icon" src="/assets/leaffolio-icon.png" alt="" aria-hidden="true">
+            <h2>LeafFolio</h2>
           </div>
-          <p>A care companion for orchid owners that tracks plants, photos, care history, reminders, and practical daily guidance.</p>
-          <a class="button" href="/apps/orchid-guardian/">View App</a>
+          <div class="app-card-copy">
+            <p><strong>Your living collection.</strong></p>
+            <p>Keep track of the plants you grow, their photos, history, and the small changes that make a collection yours.</p>
+            <a class="secondary-link" href="/privacy/leaffolio/">Privacy Policy</a>
+          </div>
+        </article>
+
+        <article class="card curious-nature">
+          <span class="status">In development</span>
+          <div class="app-card-title">
+            <h2>Curious Nature</h2>
+          </div>
+          <div class="app-card-copy">
+            <p><strong>Cultivate Wonder.</strong></p>
+            <p>A quiet place to notice, capture, and revisit moments from the world around you.</p>
+          </div>
+        </article>
+
+        <article class="card keepspan">
+          <span class="status">In development</span>
+          <div class="app-card-title">
+            <h2>KeepSpan</h2>
+          </div>
+          <div class="app-card-copy">
+            <p><strong>Your life, over time.</strong></p>
+            <p>A larger iPad and Mac home for revisiting what you’ve collected, noticed, and cared about across Apps by Randy.</p>
+            <p class="muted">LeafFolio and Curious Nature work independently. KeepSpan adds a broader way to revisit them over time.</p>
+          </div>
         </article>
       </section>
     </main>
+
     <footer>
       <div class="shell">Copyright &copy; 2026 Apps by Randy. All rights reserved.</div>
     </footer>
