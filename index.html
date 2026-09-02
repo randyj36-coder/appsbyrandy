@@ -34,6 +34,17 @@
         margin-bottom: 0;
       }
 
+      .app-title-link {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .app-title-link:hover,
+      .app-title-link:focus-visible {
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+
       .app-card-copy {
         margin-top: 14px;
       }
@@ -72,7 +83,7 @@
           <span class="status">Coming first</span>
           <div class="app-card-title">
             <img class="app-card-icon" src="/assets/leaffolio-icon.png" alt="" aria-hidden="true">
-            <h2>LeafFolio</h2>
+            <h2><a class="app-title-link" href="/support/leaffolio/">LeafFolio</a></h2>
           </div>
           <div class="app-card-copy">
             <p><strong>Your living collection.</strong></p>
